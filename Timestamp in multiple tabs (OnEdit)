@@ -1,0 +1,45 @@
+function onEdit() 
+{ //executes the script on edit
+  
+  var s = SpreadsheetApp.getActiveSheet(); 
+  // Checks for the Active Sheet / tab
+  
+  if( s.getName() == "Aparna, Minurvi, Nishant, and Shiva")
+  // if sheet 1, then what
+  { 
+    var r = s.getActiveCell();
+    if( r.getColumn() == 11 )
+    { 
+      var nextCell = r.offset(0, 2);
+      nextCell.setValue(new Date()).setNumberFormat("dd/MM/yyyy");
+    }  
+  }
+
+  if( s.getName() == "Travel Guides")
+  // if sheet 2, then what
+  { 
+    var r = s.getActiveCell();
+    if( r.getColumn() == 12 )
+    { 
+      var nextCell = r.offset(0, 8);
+      nextCell.setValue(new Date()).setNumberFormat("dd/MM/yyyy");
+    }  
+  }
+
+  if( s.getName() == "Popular Places/Popular Spots") { 
+    var r = s.getActiveCell();
+    if( r.getColumn() == 12 ) { 
+      var nextCell = r.offset(0, 8);
+      nextCell.setValue(new Date()).setNumberFormat("dd/MM/yyyy");
+      }  
+  }
+
+  if( s.getName() == "Listicles") { 
+    var r = s.getActiveCell();
+    if( r.getColumn() == 12 ) { 
+      var nextCell = r.offset(0, 8);
+      nextCell.setValue(new Date()).setNumberFormat("dd/MM/yyyy");
+      }  
+  }
+  
+}
