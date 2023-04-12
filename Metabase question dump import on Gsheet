@@ -1,4 +1,4 @@
-// Add metabase properties in Project Settings (Base_URL,  USERNAME, PASSWORD)
+// Add metabase properties in Project Settings (BASE_URL,  USERNAME, PASSWORD)
 
 function onInstall() {
   onOpen();
